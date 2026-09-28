@@ -1,48 +1,45 @@
-# 机械手爪与丝杆滑台 Simscape 模型
+# 机械手爪与丝杆滑台机电联合仿真
 
-## 项目简介
+围绕机械手爪开合和滑台直线运动两个任务，将 SolidWorks 机械装配导入 Simscape Multibody，再接入执行器、传感器与 PID 控制器，建立机械运动与控制反馈之间的联系。仓库包含两组独立模型，用于分析机构在驱动输入下的运动和响应。
 
-本仓库整理了两组机电系统建模与联合仿真资料：机械手爪和丝杆驱动直线滑台。内容覆盖 SolidWorks 装配体、STEP 中间模型、Simscape Multibody 导入数据、Simulink 模型及相关 MATLAB 数据文件。
+## 项目做到了什么
 
-## 主要内容
+| 对象 | 建立的系统 | 可查看的成果 |
+| --- | --- | --- |
+| 机械手爪 | 手爪与连杆装配、直流电机和双作用液压执行器、运动与力传感器、两组 PID 控制模块 | CAD 装配、联合仿真模型，以及保留响应曲线的历史仿真报告 |
+| 丝杆滑台 | 电机驱动丝杆，将转动转换为滑台直线位移，结合位置反馈与 PID 调节 | CAD 装配、丝杆关节与滑台运动模型、参数和 MATLAB 数据文件 |
 
-- 机械手爪的三维装配、Simscape 导入数据与控制模型。
-- 丝杆滑台的机械模型、运动控制模型与数据文件。
+**先看仿真结果：** [机械手爪仿真数据检查器报告](models/034%20gripper-wood-1.snapshot.1/gear/new_matlab/sdireports/New_Report.html)。报告记录了 2026-04-12 的 `Run 111: gripper`，包含内嵌信号曲线图。下载 HTML 后用浏览器打开即可查看，无需先安装 MATLAB。
 
-## 目录结构
+这份报告保留了手爪模型的历史运行结果；滑台公开内容以模型和数据为主。当前材料未提供统一的跟踪误差、超调量与调节时间统计，因此不把这些指标作为已验证成果。
 
-- `models/034 gripper-wood-1.snapshot.1/`：机械手爪的零件、装配体和多组仿真模型。
-- `models/Liner/`：丝杆直线滑台的机械模型、控制模型与导入数据。
-- `models/文件路径说明.txt`：两个主要 Simscape 模型的相对路径。
-- `docs/`：根据原工程报告整理的技术概述，不含姓名、学号等个人信息。
+## 关键设计
 
-## 使用方法
+1. **从装配到多体模型。** 保留零件、装配体、STEP 几何、XML 导入文件和 `*_DataFile.m` 参数，使刚体、关节与坐标变换能够对应到机械结构。
+2. **将驱动与机械运动连接。** 手爪模型包含电机与液压执行器；滑台通过 `Lead Screw Joint` 表达丝杆传动关系。执行器输入与关节运动在同一模型中计算。
+3. **将测量结果送回控制环。** 通过运动、转矩或力传感器取得输出，经 Simulink/物理信号转换模块连接 PID、示波器与工作区记录，便于比较输入与响应。
 
-1. 在 SolidWorks 中检查对应装配体和零件引用是否完整。
-2. 在 MATLAB/Simulink 中打开 `gripper.slx` 或 `Linear_new.slx`。
-3. 确认模型目录中的 `*_DataFile.m`、XML 和 STEP 文件均可被 MATLAB 找到。
-4. 根据本机 MATLAB/Simscape 版本重新生成缓存，不要提交 `slprj` 和 `.slxc`。
+两组模型的设计与迁移检查要点分别见[机械手爪说明](docs/gripper.md)和[丝杆滑台说明](docs/linear-stage.md)。
 
-## 环境依赖
+## 查看与复现
 
-- MATLAB / Simulink
-- Simscape Multibody
-- SolidWorks（查看或继续编辑原始机械模型时需要）
+### 主要工程入口
 
-不同版本的 CAD 与 MATLAB 可能触发模型升级提示。建议先保留副本，再保存升级后的模型。
+| 内容 | 入口 |
+| --- | --- |
+| 手爪 CAD 装配 | [gripper.SLDASM](models/034%20gripper-wood-1.snapshot.1/gear/gripper.SLDASM) |
+| 手爪联合仿真 | [gripper.slx 及配套数据目录](models/034%20gripper-wood-1.snapshot.1/gear/new_matlab/) |
+| 滑台 CAD 与联合仿真 | [Linear_new.slx 及配套装配、数据目录](models/Liner/new/) |
 
-## 验证状态
+查看 CAD 需要 SolidWorks 或兼容软件。运行仿真需要 MATLAB、Simulink、Simscape、Simscape Multibody 和 Simscape Electrical；手爪的液压执行器还依赖 Simscape Fluids。
 
-6 个 SLX 文件的压缩结构检查通过；当前环境未完成 MATLAB、Simscape 与 SolidWorks 联合打开验证。
+1. 下载完整仓库，保留模型目录层级与配套文件。
+2. 将 MATLAB 当前目录切换到对应模型目录，检查并加载同目录的 `gripper_DataFile.m` 或 `Linear_new_DataFile.m`，再打开相应 SLX 模型。
+3. 确认 STEP 引用可解析，检查关节方向、单位、执行器与传感器方向；滑台还需核对丝杆导程、质量和惯量。
+4. 运行后通过模型中的 Scope 或 Simulation Data Inspector 查看输入与输出，并记录运行环境、参数和结果。
 
-## 已知限制
+## 验证与公开范围
 
-模型可能依赖特定版本的 CAD 导入接口和 Simscape 数据文件，升级后需要重新检查关节、坐标系和求解器设置。
+当前已检查 6 个 SLX 文件的压缩结构、主要模型模块和报告内容；本次整理未在 MATLAB、Simscape 或 SolidWorks 中重新运行。迁移软件版本时仍需检查库依赖、坐标系与求解器设置，历史曲线不能替代新环境下的复测。
 
-## 隐私与公开范围
-
-公开副本保留工程模型与匿名化技术说明，不包含姓名、学号和原始个人报告。
-
-## 许可证
-
-当前未附加开源许可证。公开仓库可用于作品展示，但第三方复用权限需由仓库所有者另行确定。
+仓库公开 CAD、仿真模型、导入数据与匿名化说明，保留部分建模阶段版本；原始个人报告未公开。当前未附加开源许可证，第三方复用权限需由仓库所有者另行确定。
