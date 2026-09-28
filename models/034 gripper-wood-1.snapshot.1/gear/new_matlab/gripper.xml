@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="04/10/26||15:03:19" using="Simscape Multibody Link Version 7.4" from="SolidWorks 30.5.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="gripper" uid="gripper" version="185">
+<AssemblyFile name="gripper.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="装配体6-2" uid="装配体6-2" entityUid="装配体6" rigid="true">
+<Transform>
+<Rotation>-0.13156215336146748 -0.9902120960819929 0.046598332328525956 0.99088114448442943 -0.12998094145427802 0.035489609238292336 -0.029085345246719185 0.050842498282102355 0.99828306760172658</Rotation>
+<Translation>0.01428711747005792 0.92714080477670724 -5.5022659455738623</Translation>
+</Transform>
+<Instance name="COVER 02-1" uid="COVER 02-1" entityUid="COVER 02*:*默认">
+<Transform>
+<Rotation>0.24866767552482788 -0.96858886383701448 0 0.96858886383701459 0.24866767552482782 0 0 0 0.99999999999999989</Rotation>
+<Translation>1.0258564542062718 -3.2626440722346799 3.794132244856435</Translation>
+</Transform>
+</Instance>
+<Instance name="GRIPPER-2" uid="GRIPPER-2" entityUid="GRIPPER*:*默认">
+<Transform>
+<Rotation>0.24866767552482788 -0.96858886383701448 0 0.96858886383701459 0.24866767552482782 0 0 0 0.99999999999999989</Rotation>
+<Translation>1.4999012156160232 -7.3946338457232876 3.7791322448564344</Translation>
+</Transform>
+</Instance>
+<Instance name="BUSHING 03-2" uid="BUSHING 03-2" entityUid="BUSHING 03*:*默认">
+<Transform>
+<Rotation>0.24866767552482788 -0.96858886383701448 0 0.96858886383701459 0.24866767552482782 0 0 0 0.99999999999999989</Rotation>
+<Translation>-0.33614832186867949 0.13284833464514839 3.7941322448564359</Translation>
+</Transform>
+</Instance>
+<Instance name="COVER 03-1" uid="COVER 03-1" entityUid="COVER 03*:*默认">
+<Transform>
+<Rotation>0.24866767552482394 -0.96858886383701548 0 0.96858886383701581 0.24866767552482391 0 0 0 0.99999999999999989</Rotation>
+<Translation>1.0616824970100902 -3.10301916894077 3.7791322448564344</Translation>
+</Transform>
+</Instance>
+<Instance name="BUSHING 03-1" uid="BUSHING 03-1" entityUid="BUSHING 03*:*默认">
+<Transform>
+<Rotation>0.24866767552482788 -0.96858886383701448 0 0.96858886383701459 0.24866767552482782 0 0 0 0.99999999999999989</Rotation>
+<Translation>-0.33614832186867949 0.13284833464514839 4.1141322448564344</Translation>
+</Transform>
+</Instance>
+<Instance name="GRIPPER-1" uid="GRIPPER-1" entityUid="GRIPPER*:*默认">
+<Transform>
+<Rotation>0.24866767552482788 -0.96858886383701448 0 0.96858886383701459 0.24866767552482782 0 0 0 0.99999999999999989</Rotation>
+<Translation>1.4999012156160232 -7.3946338457232876 4.2241322448564347</Translation>
+</Transform>
+</Instance>
+<Instance name="SPACER 02(Varsay_lan)-1" uid="SPACER 02(Varsay_lan)-1" entityUid="SPACER 02(Varsay_lan)*:*默认">
+<Transform>
+<Rotation>0.24863907338479091 -0.96859620646911082 0 0.96859620646911082 0.24863907338479088 0 0 0 0.99999999999999989</Rotation>
+<Translation>1.8683325377234521 -6.6700617119980938 3.9041322448564362</Translation>
+</Transform>
+</Instance>
+<Instance name="SPACER(Varsay_lan)-1" uid="SPACER(Varsay_lan)-1" entityUid="SPACER(Varsay_lan)*:*默认">
+<Transform>
+<Rotation>0.24863907338479091 -0.96859620646911082 0 0.96859620646911082 0.24863907338479088 0 0 0 0.99999999999999989</Rotation>
+<Translation>1.8683325329343323 -6.6700617107655376 4.0991322448564347</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="装配体5-2" uid="装配体5-2" grounded="true" entityUid="装配体5" rigid="true">
+<Transform>
+<Rotation>-0.13759697453874409 -0.98939156455974719 0.046598332328527767 0.99007024108537189 -0.1360198711706013 0.035489609238292662 -0.028774820849797263 0.051018884981433109 0.9982830676017268</Rotation>
+<Translation>-0.030621297956267217 0.86749066684571319 -5.4980490881621948</Translation>
+</Transform>
+<Instance name="GRIPPER-2" uid="GRIPPER-2" entityUid="GRIPPER*:*默认">
+<Transform>
+<Rotation>-0.33506169729116198 -0.94219618923468673 0 -0.94219618923468684 0.33506169729116198 0 0 0 -1</Rotation>
+<Translation>5.7419399715641957 6.2351138386270231 3.8241322448564428</Translation>
+</Transform>
+</Instance>
+<Instance name="SPACER 02(Varsay_lan)-1" uid="SPACER 02(Varsay_lan)-1" entityUid="SPACER 02(Varsay_lan)*:*默认">
+<Transform>
+<Rotation>-0.33508951981184515 -0.94218629458948666 0 -0.94218629458948666 0.3350895198118452 0 0 0 -0.99999999999999989</Rotation>
+<Translation>5.6425601287572391 5.4283486552051086 4.0841322448564412</Translation>
+</Transform>
+</Instance>
+<Instance name="GRIPPER-1" uid="GRIPPER-1" entityUid="GRIPPER*:*默认">
+<Transform>
+<Rotation>-0.33506169729116198 -0.94219618923468673 0 -0.94219618923468684 0.33506169729116198 0 0 0 -1</Rotation>
+<Translation>5.7419399715641948 6.2351138386270222 4.2091322448564412</Translation>
+</Transform>
+</Instance>
+<Instance name="SPACER(Varsay_lan)-1" uid="SPACER(Varsay_lan)-1" entityUid="SPACER(Varsay_lan)*:*默认">
+<Transform>
+<Rotation>-0.33508951981184515 -0.94218629458948666 0 -0.94218629458948666 0.3350895198118452 0 0 0 -0.99999999999999989</Rotation>
+<Translation>5.6425601287572391 5.4283486552051077 3.9491322448564423</Translation>
+</Transform>
+</Instance>
+<Instance name="COVER 01-1" uid="COVER 01-1" entityUid="COVER 01*:*默认">
+<Transform>
+<Rotation>-0.335061697291058 -0.9421961892347237 0 -0.9421961892347237 0.335061697291058 0 0 0 -0.99999999999999989</Rotation>
+<Translation>3.0397403091085557 3.0734410364131906 4.194132244856438</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="装配体9-2" uid="装配体9-2" entityUid="装配体9" rigid="true">
+<Transform>
+<Rotation>0.075355532373020381 -0.99606733666202452 0.046598332328525921 0.99639611575648779 0.07704069146559428 0.035489609238292433 -0.038940008296895118 0.043756058935011222 0.9982830676017268</Rotation>
+<Translation>0.084620009254313261 0.90149217394611791 -5.5046371523549231</Translation>
+</Transform>
+<Instance name="SHAFT 06-1" uid="SHAFT 06-1" entityUid="SHAFT 06*:*默认">
+<Transform>
+<Rotation>0 0 -0.99999999999999978 0 1 0 1.0000000000000002 0 0</Rotation>
+<Translation>-0.33614832186867893 0.13284833464514506 3.7591322448564357</Translation>
+</Transform>
+</Instance>
+<Instance name="LINK-2" uid="LINK-2" entityUid="LINK*:*默认">
+<Transform>
+<Rotation>0.091383545345629411 -0.99581576992938958 0 0.99581576992938969 0.091383545345629397 0 0 0 0.99999999999999978</Rotation>
+<Translation>-0.27781714499746246 0.05720130030261994 3.8241322448564352</Translation>
+</Transform>
+</Instance>
+<Instance name="LINK-1" uid="LINK-1" entityUid="LINK*:*默认">
+<Transform>
+<Rotation>0.091383545345629411 -0.99581576992938958 0 0.99581576992938969 0.091383545345629397 0 0 0 0.99999999999999978</Rotation>
+<Translation>-0.27781714499746246 0.057201300302620856 4.1541322448564362</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="装配体8-2" uid="装配体8-2" entityUid="装配体8" rigid="true">
+<Transform>
+<Rotation>-0.2046302193158164 -0.97772954786431654 0.046598332328529481 0.97851401070404387 -0.20310297509391595 0.03548960923829414 -0.025234979664099263 0.052859367580774058 0.99828306760172658</Rotation>
+<Translation>-0.060092400042869219 0.93915494780272069 -5.4992211336033705</Translation>
+</Transform>
+<Instance name="SHAFT 07-1" uid="SHAFT 07-1" entityUid="SHAFT 07*:*默认">
+<Transform>
+<Rotation>0 0.99925762445994426 0.038525315815309089 0 0.038525315815309005 -0.99925762445994415 -1.0000000000000002 0 0</Rotation>
+<Translation>-0.24640968033927058 1.1107394207158083 4.2291322448564364</Translation>
+</Transform>
+</Instance>
+<Instance name="piston-rod-1" uid="piston-rod-1" entityUid="piston-rod*:*默认">
+<Transform>
+<Rotation>0.93116365329078676 0 -0.36460149586933344 -0.36460149586933344 0 -0.93116365329078665 0 1.0000000000000002 0</Rotation>
+<Translation>-0.26463975513273708 1.0641812380512683 4.0091322448564357</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="装配体7-2" uid="装配体7-2" entityUid="装配体7" rigid="true">
+<Transform>
+<Rotation>-0.20463021931581352 -0.97772954786431709 0.046598332328529349 0.97851401070404442 -0.20310297509391312 0.035489609238293016 -0.025234979664098354 0.052859367580773628 0.99828306760172658</Rotation>
+<Translation>-0.03224803599174908 0.93441604459440342 -5.5003523950091768</Translation>
+</Transform>
+<Instance name="SHAFT-1" uid="SHAFT-1" entityUid="SHAFT*:*默认">
+<Transform>
+<Rotation>0 -0.7822253293637097 0.62299561322840469 0 0.62299561322840469 0.78222532936370959 -1.0000000000000002 0 0</Rotation>
+<Translation>-0.60246962585605734 0.20139021778014174 4.2391322448564361</Translation>
+</Transform>
+</Instance>
+<Instance name="piston-kazan-1" uid="piston-kazan-1" entityUid="piston-kazan*:*默认">
+<Transform>
+<Rotation>0 -0.93116365329078676 0.36460149586933344 0 0.36460149586933344 0.93116365329078676 -1 0 0</Rotation>
+<Translation>-0.5842395510625914 0.24794840044468114 4.0091322448564348</Translation>
+</Transform>
+</Instance>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="同心1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>装配体6-2</Uid>
+<Uid>GRIPPER-2</Uid>
+</InstancePath>
+<Position>6.8346326471073784 3.9252186318075686 -0.11313708498984831</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>装配体7-2</Uid>
+<Uid>SHAFT-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>装配体6-2</Uid>
+<Uid>SPACER(Varsay_lan)-1</Uid>
+</InstancePath>
+<Position>6.3576903534869915 3.4501664947497206 -2.2204460492503131e-16</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>装配体7-2</Uid>
+<Uid>piston-kazan-1</Uid>
+</InstancePath>
+<Position>-0.09000000000000008 0 -0.049999999999999982</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>装配体5-2</Uid>
+<Uid>GRIPPER-2</Uid>
+</InstancePath>
+<Position>6.8346326471073802 3.925218631807569 -0.11313708498984809</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>装配体8-2</Uid>
+<Uid>SHAFT 07-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>装配体5-2</Uid>
+<Uid>SPACER 02(Varsay_lan)-1</Uid>
+</InstancePath>
+<Position>6.3576903534869906 3.4501664947497197 0.015000000000000124</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>装配体8-2</Uid>
+<Uid>piston-rod-1</Uid>
+</InstancePath>
+<Position>0 0.060000000000000053 -0.049999999999999933</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>装配体7-2</Uid>
+<Uid>piston-kazan-1</Uid>
+</InstancePath>
+<Position>0 0 0.12500000000000003</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>装配体8-2</Uid>
+<Uid>piston-rod-1</Uid>
+</InstancePath>
+<Position>0 2.2204460492503131e-16 0.59999999999999987</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="同心4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>装配体6-2</Uid>
+<Uid>GRIPPER-1</Uid>
+</InstancePath>
+<Position>6.8344692420016786 3.6502186318075696 -0.11313708498984809</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>装配体9-2</Uid>
+<Uid>SHAFT 06-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="同心5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>装配体5-2</Uid>
+<Uid>GRIPPER-1</Uid>
+</InstancePath>
+<Position>6.8344692420016795 3.65021863180757 -0.11313708498984831</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>装配体9-2</Uid>
+<Uid>LINK-1</Uid>
+</InstancePath>
+<Position>1.0520000000000003 0.06500000000000028 0.040000000000000258</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>装配体5-2</Uid>
+<Uid>GRIPPER-1</Uid>
+</InstancePath>
+<Position>7.1277704957377193 3.2949304729735149 0.014999999999999902</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>装配体9-2</Uid>
+<Uid>LINK-1</Uid>
+</InstancePath>
+<Position>1.1120000000000003 0.12000000000000011 0.040000000000000258</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+<Assembly name="装配体6" uid="装配体6" version="135">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="装配体6.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="装配体5" uid="装配体5" version="135">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="装配体5.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="装配体9" uid="装配体9" version="135">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="装配体9.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="装配体8" uid="装配体8" version="135">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="装配体8.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="装配体7" uid="装配体7" version="135">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="装配体7.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+</Assemblies>
+<Parts>
+<Part name="BUSHING 03" uid="BUSHING 03*:*默认" version="142">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="BUSHING 03.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.24190263432641418</Mass>
+<CenterOfMass>0 0 0.055</CenterOfMass>
+<Inertia>0.00039510763606647641 0.00039510763606647641 0.00030237829290801773 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="BUSHING 03_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Diffuse r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Specular r="0.56941176470588239" g="0.5452549019607843" b="0.51419607843137261" a="1"/>
+<Emissive r="0.13588235294117648" g="0.13011764705882353" b="0.12270588235294118" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="COVER 01" uid="COVER 01*:*默认" version="142">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="COVER 01.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>4.3283607701339717</Mass>
+<CenterOfMass>2.8070452664654764 1.5718245159561635 0.18499999999999997</CenterOfMass>
+<Inertia>0.20389172512379503 0.099760638453627246 0.20489359867219961 5.464098326322736e-16 0 0.079875266345087695</Inertia>
+</MassProperties>
+<GeometryFile name="COVER 01_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Diffuse r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Specular r="0.56941176470588239" g="0.5452549019607843" b="0.51419607843137261" a="1"/>
+<Emissive r="0.13588235294117648" g="0.13011764705882353" b="0.12270588235294118" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="COVER 02" uid="COVER 02*:*默认" version="142">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="COVER 02.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>5.0302571112367787</Mass>
+<CenterOfMass>2.8070452664654755 1.5718245159561637 0.215</CenterOfMass>
+<Inertia>0.25707627656179027 0.1360590677288919 0.23811958764606914 9.5808085427819289e-16 0 0.092828012238886037</Inertia>
+</MassProperties>
+<GeometryFile name="COVER 02_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Diffuse r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Specular r="0.56941176470588239" g="0.5452549019607843" b="0.51419607843137261" a="1"/>
+<Emissive r="0.13588235294117648" g="0.13011764705882353" b="0.12270588235294118" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="COVER 03" uid="COVER 03*:*默认" version="142">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="COVER 03.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>2.4775663058806869</Mass>
+<CenterOfMass>2.6399238804389356 2.1911390137615041 0.23000000000000015</CenterOfMass>
+<Inertia>0.094219472676791885 0.049580072537759493 0.056424040160491511 0 0 -0.015490602244222475</Inertia>
+</MassProperties>
+<GeometryFile name="COVER 03_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Diffuse r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Specular r="0.56941176470588239" g="0.5452549019607843" b="0.51419607843137261" a="1"/>
+<Emissive r="0.13588235294117648" g="0.13011764705882353" b="0.12270588235294118" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="GRIPPER" uid="GRIPPER*:*默认" version="142">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="GRIPPER.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>3.3127505100427879</Mass>
+<CenterOfMass>6.7603676044450838 3.4383193267624668 0.0075000000000000015</CenterOfMass>
+<Inertia>0.34417470129836814 0.024282199944886489 0.36833267309912804 0 0 -0.034146084832626607</Inertia>
+</MassProperties>
+<GeometryFile name="GRIPPER_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Diffuse r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Specular r="0.56941176470588239" g="0.5452549019607843" b="0.51419607843137261" a="1"/>
+<Emissive r="0.13588235294117648" g="0.13011764705882353" b="0.12270588235294118" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="LINK" uid="LINK*:*默认" version="142">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="LINK.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>5.6047716995558945</Mass>
+<CenterOfMass>0.56099999999999994 0.065000000000000002 0.02</CenterOfMass>
+<Inertia>0.008899649855993088 0.55716251324299571 0.56456755731244057 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="LINK_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Diffuse r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Specular r="0.56941176470588239" g="0.5452549019607843" b="0.51419607843137261" a="1"/>
+<Emissive r="0.13588235294117648" g="0.13011764705882353" b="0.12270588235294118" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="SHAFT 06" uid="SHAFT 06*:*默认" version="142">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="SHAFT 06.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.4236160089538517</Mass>
+<CenterOfMass>0.24478380202618108 1.8708231605426892e-09 -1.8212443395568908e-09</CenterOfMass>
+<Inertia>0.00065461593485209341 0.030310283693780742 0.03031324408664662 2.6184124911408973e-11 5.3140589662983226e-10 -5.538854531806468e-10</Inertia>
+</MassProperties>
+<GeometryFile name="SHAFT 06_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Diffuse r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Specular r="0.56941176470588239" g="0.5452549019607843" b="0.51419607843137261" a="1"/>
+<Emissive r="0.13588235294117648" g="0.13011764705882353" b="0.12270588235294118" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="SHAFT 07" uid="SHAFT 07*:*默认" version="142">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="SHAFT 07.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.2539704038832009</Mass>
+<CenterOfMass>0.21481840407080122 1.860720168499725e-09 -1.8200748747105639e-09</CenterOfMass>
+<Inertia>0.0005782752755697601 0.02076211972722947 0.020765080004539502 2.7654941400000309e-11 4.1287798165823002e-10 -4.2919820262922488e-10</Inertia>
+</MassProperties>
+<GeometryFile name="SHAFT 07_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Diffuse r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Specular r="0.56941176470588239" g="0.5452549019607843" b="0.51419607843137261" a="1"/>
+<Emissive r="0.13588235294117648" g="0.13011764705882353" b="0.12270588235294118" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="SHAFT" uid="SHAFT*:*默认" version="142">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="SHAFT.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.8577274287311667</Mass>
+<CenterOfMass>0.32183181879698075 8.8096674167580247e-09 -7.5794901339844593e-09</CenterOfMass>
+<Inertia>0.000852075222516648 0.06753681100124638 0.067543984599328644 -4.4538896182308266e-11 3.6980264982773079e-09 -4.2115014229363649e-09</Inertia>
+</MassProperties>
+<GeometryFile name="SHAFT_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Diffuse r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Specular r="0.56941176470588239" g="0.5452549019607843" b="0.51419607843137261" a="1"/>
+<Emissive r="0.13588235294117648" g="0.13011764705882353" b="0.12270588235294118" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="SPACER 02(Varsay_lan)" uid="SPACER 02(Varsay_lan)*:*默认" version="142">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="SPACER 02(Varsay_lan).SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>2.1749465872637415</Mass>
+<CenterOfMass>5.9917787738633264 3.8285917318396372 -0.0024227806977058504</CenterOfMass>
+<Inertia>0.08206863552145513 0.016077971716805757 0.095120803767975326 -0.0051803982359270653 -0.0018491226181075575 -0.020266802497525122</Inertia>
+</MassProperties>
+<GeometryFile name="SPACER 02(Varsay_lan)_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Diffuse r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Specular r="0.56941176470588239" g="0.5452549019607843" b="0.51419607843137261" a="1"/>
+<Emissive r="0.13588235294117648" g="0.13011764705882353" b="0.12270588235294118" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="SPACER(Varsay_lan)" uid="SPACER(Varsay_lan)*:*默认" version="142">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="SPACER(Varsay_lan).SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>2.1749807389954268</Mass>
+<CenterOfMass>5.9917776340526148 3.8285889307118692 0.017422399492897443</CenterOfMass>
+<Inertia>0.082069825465001217 0.016078219427935476 0.09512225259622252 0.0051802082396846206 0.0018490517700609868 -0.020267246109563351</Inertia>
+</MassProperties>
+<GeometryFile name="SPACER(Varsay_lan)_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Diffuse r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Specular r="0.56941176470588239" g="0.5452549019607843" b="0.51419607843137261" a="1"/>
+<Emissive r="0.13588235294117648" g="0.13011764705882353" b="0.12270588235294118" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="piston-kazan" uid="piston-kazan*:*默认" version="142">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="piston-kazan.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>2.7365351748026794</Mass>
+<CenterOfMass>0 0 0.24505372048659443</CenterOfMass>
+<Inertia>0.16053905562633031 0.16146042283889844 0.0046743482206314732 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="piston-kazan_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Diffuse r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Specular r="0.56941176470588239" g="0.5452549019607843" b="0.51419607843137261" a="1"/>
+<Emissive r="0.13588235294117648" g="0.13011764705882353" b="0.12270588235294118" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="piston-rod" uid="piston-rod*:*默认" version="142">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="piston-rod.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>2.5979739741482724</Mass>
+<CenterOfMass>0 0 0.26150993743164647</CenterOfMass>
+<Inertia>0.10129907746152493 0.10111818771378582 0.0019267840920223077 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="piston-rod_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Diffuse r="0.6470588235294118" g="0.61960784313725492" b="0.58431372549019611" a="1"/>
+<Specular r="0.56941176470588239" g="0.5452549019607843" b="0.51419607843137261" a="1"/>
+<Emissive r="0.13588235294117648" g="0.13011764705882353" b="0.12270588235294118" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

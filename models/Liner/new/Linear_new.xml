@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="04/09/26||08:45:38" using="Simscape Multibody Link Version 7.4" from="SolidWorks 30.5.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Linear_Guide_test20260320" uid="Linear_Guide_test20260320" version="274">
+<AssemblyFile name="Linear_Guide_test20260320.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="ZhiJia-2" uid="ZhiJia-2" grounded="true" entityUid="ZhiJia*:*默认">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.0025180119652855725 0.033186061198110239 0.70499999999999996</Translation>
+</Transform>
+</Instance>
+<Instance name="HuaTai-1" uid="HuaTai-1" entityUid="HuaTai*:*默认">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.0025180119652855569 0.028186061198110339 0.33064485534997046</Translation>
+</Transform>
+</Instance>
+<Instance name="ZhiJia-1" uid="ZhiJia-1" grounded="true" entityUid="ZhiJia*:*默认">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.0025180119652855751 0.033186061198110246 0.115</Translation>
+</Transform>
+</Instance>
+<Instance name="HuaGan-1" uid="HuaGan-1" grounded="true" entityUid="HuaGan*:*默认">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.017653809340556326 0.0031860611981102474 0.11499999999999998</Translation>
+</Transform>
+</Instance>
+<Instance name="HuaGan-2" uid="HuaGan-2" grounded="true" entityUid="HuaGan*:*默认">
+<Transform>
+<Rotation>0.99986111111111109 -0.016666087952915746 0 0.016666087952915746 0.99986111111111109 0 0 0 1</Rotation>
+<Translation>0.042346190659443672 0.0031860611981102474 0.11500000000000003</Translation>
+</Transform>
+</Instance>
+<Instance name="SiGan-1" uid="SiGan-1" entityUid="SiGan*:*默认">
+<Transform>
+<Rotation>-0.61342633807274916 0.789751940648871 0 -0.789751940648871 -0.61342633807274916 0 0 0 1</Rotation>
+<Translation>0.012346190659443618 0.013186061198110166 0.11500000000000002</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="重合2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>ZhiJia-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>SiGan-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>ZhiJia-1</Uid>
+</InstancePath>
+<Position>0.009828178694158099 -0.02 0.009999999999999995</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>SiGan-1</Uid>
+</InstancePath>
+<Position>0 0 0.62</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="同心8">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>HuaTai-1</Uid>
+</InstancePath>
+<Position>-0.0201718213058419 -0.025000000000000001 0.03999999999999998</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>HuaGan-1</Uid>
+</InstancePath>
+<Position>0 0 0.59999999999999998</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="同心9">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>HuaTai-1</Uid>
+</InstancePath>
+<Position>0.009828178694158099 -0.014999999999999999 0.03999999999999998</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>SiGan-1</Uid>
+</InstancePath>
+<Position>0 0 0.62</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="HuaGan" uid="HuaGan*:*默认" version="142">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="HuaGan.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.067858401317539535</Mass>
+<CenterOfMass>0 0 0.29999999999999999</CenterOfMass>
+<Inertia>0.0020363627651380427 0.0020363627651380427 1.2214512237157116e-06 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="HuaGan_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.88" g="0.88" b="0.88" a="1"/>
+<Emissive r="0.20999999999999999" g="0.20999999999999999" b="0.20999999999999999" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="HuaTai" uid="HuaTai*:*默认" version="142">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="HuaTai.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.18257522203923063</Mass>
+<CenterOfMass>0.0098281786941581059 -0.019913964430153759 0.02</CenterOfMass>
+<Inertia>4.9647487183719169e-05 0.00024902959129984763 0.00024999035260643869 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="HuaTai_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.88" g="0.88" b="0.88" a="1"/>
+<Emissive r="0.20999999999999999" g="0.20999999999999999" b="0.20999999999999999" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="SiGan" uid="SiGan*:*默认" version="142">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="SiGan.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.048694686130641804</Mass>
+<CenterOfMass>0 0 0.31</CenterOfMass>
+<Inertia>0.0015601574541732088 0.0015601574541732088 6.0868357663302258e-07 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="SiGan_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.88" g="0.88" b="0.88" a="1"/>
+<Emissive r="0.20999999999999999" g="0.20999999999999999" b="0.20999999999999999" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="ZhiJia" uid="ZhiJia*:*默认" version="142">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="ZhiJia.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.057643805509807654</Mass>
+<CenterOfMass>0.0098281786941581024 -0.02493187488608262 0.0050000000000000001</CenterOfMass>
+<Inertia>1.2906466441399792e-05 7.1051922136235949e-05 8.2997658485805615e-05 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="ZhiJia_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.88" g="0.88" b="0.88" a="1"/>
+<Emissive r="0.20999999999999999" g="0.20999999999999999" b="0.20999999999999999" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
