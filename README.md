@@ -11,7 +11,7 @@
 
 **先看仿真结果：** [机械手爪仿真数据检查器报告](models/034%20gripper-wood-1.snapshot.1/gear/new_matlab/sdireports/New_Report.html)。报告记录了 2026-04-12 的 `Run 111: gripper`，包含内嵌信号曲线图。下载 HTML 后用浏览器打开即可查看，无需先安装 MATLAB。
 
-这份报告保留了手爪模型的历史运行结果；滑台公开内容以模型和数据为主。当前材料未提供统一的跟踪误差、超调量与调节时间统计，因此不把这些指标作为已验证成果。
+这份报告保留了手爪模型的历史运行结果；两个主模型由 MATLAB R2024b 保存，最后保存日期为 2026-04-16，晚于报告日期。滑台公开内容以模型和数据为主。当前材料未提供统一的跟踪误差、超调量与调节时间统计，因此不把这些指标作为已验证成果。
 
 ## 关键设计
 
@@ -34,7 +34,7 @@
 查看 CAD 需要 SolidWorks 或兼容软件。运行仿真需要 MATLAB、Simulink、Simscape、Simscape Multibody 和 Simscape Electrical；手爪的液压执行器还依赖 Simscape Fluids。
 
 1. 下载完整仓库，保留模型目录层级与配套文件。
-2. 将 MATLAB 当前目录切换到对应模型目录，检查并加载同目录的 `gripper_DataFile.m` 或 `Linear_new_DataFile.m`，再打开相应 SLX 模型。
+2. 将 MATLAB 当前目录切换到对应主模型目录并打开 SLX。两个模型的 Model Workspace 仍绑定旧机器的绝对路径，需按[手爪迁移步骤](docs/gripper.md)或[滑台迁移步骤](docs/linear-stage.md)重新指定同目录的 DataFile，并执行 Reinitialize From Source；仅在基础工作区运行 DataFile 不能替代此操作。
 3. 确认 STEP 引用可解析，检查关节方向、单位、执行器与传感器方向；滑台还需核对丝杆导程、质量和惯量。
 4. 运行后通过模型中的 Scope 或 Simulation Data Inspector 查看输入与输出，并记录运行环境、参数和结果。
 

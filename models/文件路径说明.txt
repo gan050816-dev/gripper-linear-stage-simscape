@@ -1,2 +1,17 @@
-手爪 Simscape 模型：034 gripper-wood-1.snapshot.1\gear\new_matlab\gripper.slx
-丝杆滑台 Simscape 模型：Liner\new\Linear_new.slx
+主要工程入口（以下路径均相对于本文件所在的 models/ 目录）
+
+机械手爪
+  仿真模型：034 gripper-wood-1.snapshot.1\gear\new_matlab\gripper.slx
+  模型数据：034 gripper-wood-1.snapshot.1\gear\new_matlab\gripper_DataFile.m
+  CAD 装配：034 gripper-wood-1.snapshot.1\gear\gripper.SLDASM
+  历史报告：034 gripper-wood-1.snapshot.1\gear\new_matlab\sdireports\New_Report.html
+  查看与迁移说明：..\docs\gripper.md
+
+丝杆滑台
+  仿真模型：Liner\new\Linear_new.slx
+  模型数据：Liner\new\Linear_new_DataFile.m
+  CAD 装配：Liner\new\Linear_Guide_test20260320.SLDASM
+  查看与迁移说明：..\docs\linear-stage.md
+
+首次查看使用上述主模型及同目录的 XML、STEP 和 DataFile；其他目录中的同名 SLX 属于不同阶段，不混用数据文件。
+两个主模型均保存为 R2024b，模型工作区仍绑定原机器的 C: 绝对路径。下载后按详细说明重新指定本地 DataFile，并执行 Reinitialize From Source；仅切换当前目录或在基础工作区运行数据文件不能完成该迁移。
